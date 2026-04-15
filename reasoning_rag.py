@@ -112,16 +112,31 @@ class ReasoningRAG:
                 "answer_preview": answer_text[:200],
             })
 
-            # 5. Verify
-            verification = self.verifier.verify(current_question, answer_text, agg["selected"])
+            # 4.5 If generator refused, skip verification — force low confidence
+            if gen["method"] == "llm_unanswerable" or not answer_text:
+                verification = {
+                    "confidence": 0.0, "divergence": 0.0,
+                    "judge_a": {}, "judge_b": {}, "details": {
+                        "dimension_means": {"faithfulness": 0.0, "completeness": 0.0, "consistency": 0.0},
+                    },
+                }
+                chain.append({
+                    "step": f"verification_iter_{iteration}",
+                    "confidence": 0.0,
+                    "skipped": True,
+                    "reason": "generator returned unanswerable",
+                })
+            else:
+                # 5. Verify
+                verification = self.verifier.verify(current_question, answer_text, agg["selected"])
+                chain.append({
+                    "step": f"verification_iter_{iteration}",
+                    "confidence": verification["confidence"],
+                    "divergence": verification["divergence"],
+                    "judge_a": verification["judge_a"],
+                    "judge_b": verification["judge_b"],
+                })
             confidence = verification["confidence"]
-            chain.append({
-                "step": f"verification_iter_{iteration}",
-                "confidence": confidence,
-                "divergence": verification["divergence"],
-                "judge_a": verification["judge_a"],
-                "judge_b": verification["judge_b"],
-            })
 
             best_result = self._pack_result(
                 question=question,

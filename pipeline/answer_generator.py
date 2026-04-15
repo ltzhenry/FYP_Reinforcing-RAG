@@ -1,10 +1,17 @@
 """Stage 3b — Generate an answer from aggregated evidence via LLM."""
 import logging
+import re
 from typing import Dict, List, Optional
 
 from core.llm_provider import get_llm_client, get_model_name, get_token_limit_kwargs
 
 logger = logging.getLogger(__name__)
+
+_REFUSAL_PHRASES = [
+    "unanswerable", "insufficient evidence", "cannot determine",
+    "not enough information", "no evidence", "cannot be determined",
+    "unable to answer", "not mentioned", "i don't know", "i cannot",
+]
 
 
 class AnswerGenerator:
@@ -15,38 +22,25 @@ class AnswerGenerator:
     def generate(self, question: str, evidence: List[Dict],
                  analysis: Optional[Dict] = None) -> Dict:
         if not evidence:
-            return {"answer": "No evidence available.", "method": "no_evidence", "llm_calls": 0}
+            return {"answer": "", "method": "no_evidence", "llm_calls": 0}
 
         if self.client:
             try:
                 answer = self._llm_generate(question, evidence)
-                if answer and not self._is_refusal(answer) and len(answer.strip()) > 5:
+                if answer and not self._is_refusal(answer):
                     return {"answer": answer, "method": "llm", "llm_calls": 1}
-                if answer and self._is_refusal(answer):
-                    return {"answer": answer, "method": "llm_unanswerable", "llm_calls": 1}
+                # LLM said unanswerable — signal to caller, don't return as final answer
+                return {"answer": "", "method": "llm_unanswerable", "llm_calls": 1}
             except Exception as exc:
                 logger.warning("LLM generation failed: %s", exc)
 
-        answer = self._simple_generate(evidence)
+        answer = self._simple_generate(question, evidence)
         return {"answer": answer, "method": "simple_fallback", "llm_calls": 0}
-
-    @staticmethod
-    def _is_refusal(answer: str) -> bool:
-        low = answer.strip().lower()
-        refusal_phrases = [
-            "unanswerable", "insufficient evidence", "cannot determine",
-            "not enough information", "no evidence", "cannot be determined",
-            "unable to answer", "not mentioned",
-        ]
-        return any(phrase in low for phrase in refusal_phrases)
 
     def generate_fallback(self, question: str) -> Dict:
         """Fallback: answer purely from LLM knowledge, no evidence."""
         if not self.client:
-            return {
-                "answer": "Unable to answer — no evidence found and LLM unavailable.",
-                "method": "no_llm_fallback", "llm_calls": 0,
-            }
+            return {"answer": "", "method": "no_llm_fallback", "llm_calls": 0}
         try:
             resp = self.client.chat.completions.create(
                 model=self.model_name,
@@ -67,7 +61,7 @@ class AnswerGenerator:
             }
         except Exception as exc:
             logger.warning("Fallback generation failed: %s", exc)
-            return {"answer": "Unable to answer this question.", "method": "error", "llm_calls": 0}
+            return {"answer": "", "method": "error", "llm_calls": 0}
 
     # ------------------------------------------------------------------
     def _llm_generate(self, question: str, evidence: List[Dict]) -> str:
@@ -95,15 +89,24 @@ class AnswerGenerator:
 
     @staticmethod
     def _clean_answer(raw: str) -> str:
-        """Strip common LLM wrapper patterns to get just the answer span."""
-        import re
         cleaned = raw.strip().strip('"').strip("'").strip("*").strip()
         cleaned = re.sub(r"^(the answer is|answer:|a:|based on.*?,)\s*", "", cleaned, flags=re.IGNORECASE)
         cleaned = cleaned.rstrip(".")
         return cleaned.strip() if cleaned.strip() else raw
 
     @staticmethod
-    def _simple_generate(evidence: List[Dict]) -> str:
-        top = evidence[0]["text"]
-        sentences = [s.strip() for s in top.split(".") if s.strip()]
-        return sentences[0] + "." if sentences else top[:200]
+    def _is_refusal(answer: str) -> bool:
+        low = answer.strip().lower()
+        return any(p in low for p in _REFUSAL_PHRASES)
+
+    @staticmethod
+    def _simple_generate(question: str, evidence: List[Dict]) -> str:
+        """Extract a short answer span from the top evidence text."""
+        text = evidence[0]["text"]
+        lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
+        body_lines = [ln for ln in lines if not ln.startswith("Title:")]
+        body = " ".join(body_lines) if body_lines else " ".join(lines)
+        sentences = [s.strip() for s in body.split(".") if s.strip() and len(s.strip()) > 5]
+        if sentences:
+            return sentences[0]
+        return body[:150]

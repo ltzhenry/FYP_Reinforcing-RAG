@@ -66,6 +66,13 @@ class NaiveRAG:
 
         gen = self.generator.generate(question, evidence)
         answer_text = gen["answer"]
+        is_fallback = False
+
+        if not answer_text or gen["method"] in ("llm_unanswerable", "no_evidence"):
+            fb = self.generator.generate_fallback(question)
+            answer_text = fb["answer"]
+            gen = fb
+            is_fallback = True
 
         sims = [e["similarity"] for e in evidence]
         avg_sim = sum(sims) / len(sims) if sims else 0.0
@@ -77,7 +84,7 @@ class NaiveRAG:
                 "answer": answer_text,
                 "confidence": avg_sim,
                 "method": gen["method"],
-                "is_fallback": False,
+                "is_fallback": is_fallback,
                 "llm_calls": gen.get("llm_calls", 0),
             },
             "analysis": {
@@ -121,7 +128,7 @@ class NaiveRAG:
             ],
             "metadata": {
                 "iterations": 1,
-                "is_fallback": False,
+                "is_fallback": is_fallback,
                 "runtime_seconds": time.perf_counter() - t0,
             },
         }
