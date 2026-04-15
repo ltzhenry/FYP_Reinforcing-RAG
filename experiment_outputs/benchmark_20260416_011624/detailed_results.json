@@ -1,0 +1,286 @@
+{
+  "naive_results": [
+    {
+      "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+      "pred": "Sergei Aleksandrovich Tokarev was a professor at **Moscow State University**. That university was founded in **1755**.\n\nThe provided evidence does not mention Tokarev or Moscow State University, so th",
+      "confidence": 0.5063030891144888,
+      "method": "llm"
+    },
+    {
+      "question": "Black Book starred the actress and writer of what heritage?",
+      "pred": "\u201cBlack Book\u201d starred Carice van Houten, who also co-wrote the 2022 film \u201cHappy Ending.\u201d Carice van Houten is of **Dutch heritage**.\n\nSo the answer is: **Dutch**.",
+      "confidence": 0.5187030576291589,
+      "method": "llm"
+    },
+    {
+      "question": "Which actor does American Beauty and American Beauty have in common?",
+      "pred": "The question appears malformed: it asks which actor **\u201cAmerican Beauty and American Beauty\u201d** have in common, which is the same title twice.\n\nIf you mean the film **American Beauty** compared with its",
+      "confidence": 0.5366666666666667,
+      "method": "llm"
+    },
+    {
+      "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+      "pred": "Ken Pruitt was a Republican member of the Florida Senate, which has 40 members.\n\nSo the answer is: 40.",
+      "confidence": 0.5068627203167532,
+      "method": "llm"
+    },
+    {
+      "question": "Between Greyia and Calibanus, which genus contains more species?",
+      "pred": "Insufficient evidence.\n\nThe provided evidence does not mention either **Greyia** or **Calibanus**, so I can\u2019t determine from it which genus contains more species.",
+      "confidence": 0.49946514010801907,
+      "method": "llm"
+    },
+    {
+      "question": "Did John Updike and Tom Clancy both publish more than 15 bestselling novels?",
+      "pred": "Insufficient evidence.\n\nNone of the provided evidence gives counts of bestselling novels for either John Updike or Tom Clancy, so I can\u2019t determine from this evidence whether both published more than ",
+      "confidence": 0.40597403005058624,
+      "method": "llm"
+    },
+    {
+      "question": "Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?",
+      "pred": "The person was **John Andr\u00e9**.\n\nHe was **hanged by the Americans** for his role in **assisting Benedict Arnold\u2019s attempted defection/surrender of West Point from the Continental Army to the British**.",
+      "confidence": 0.4938235294117647,
+      "method": "llm"
+    },
+    {
+      "question": "which Mexican and American film actress is Ethel Houbiers  French voice of ",
+      "pred": "The evidence provided does not identify **which Mexican-American film actress Ethel Houbiers is the French voice of**.\n\nNone of the snippets mention **Ethel Houbiers** at all, and the actresses listed",
+      "confidence": 0.5460425522016894,
+      "method": "llm"
+    },
+    {
+      "question": "Which major international airport in south-east England ranks as the 8th busiest airport in Europe and replaced Croydon Airport?",
+      "pred": "The airport is **London Gatwick Airport**.\n\nIt is a major international airport in **south-east England**, and it **replaced Croydon Airport** as London\u2019s main airport. The claim that it ranks as the ",
+      "confidence": 0.46700681914244235,
+      "method": "llm"
+    },
+    {
+      "question": "Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?",
+      "pred": "The evidence provided is insufficient to answer reliably.\n\nYour question refers to **Isabella Kelly** and a **ruined castle described as \u201cone of the most isolated fortifications in Britain\u201d**, but non",
+      "confidence": 0.5060000000000001,
+      "method": "llm"
+    },
+    {
+      "question": "The facility where Robert Croft worked as a navy instructor was also known as?",
+      "pred": "The evidence provided does not mention Robert Croft or the facility where he worked as a navy instructor, so it\u2019s insufficient to determine what that facility was also known as.",
+      "confidence": 0.5219230769230769,
+      "method": "llm"
+    },
+    {
+      "question": "Who released the song \"With or Without You\" first, Jai McDowall or U2?",
+      "pred": "U2 released \u201cWith or Without You\u201d first.\n\nThe provided evidence directly shows U2 was releasing major songs from *The Joshua Tree* in 1987, and \u201cWith or Without You\u201d is a U2 song from that era. Jai Mc",
+      "confidence": 0.5061839877327302,
+      "method": "llm"
+    },
+    {
+      "question": "Which \"Roseanne\" star is in Scream 2?",
+      "pred": "The \u201cRoseanne\u201d star in *Scream 2* is **Sarah Michelle Gellar**.\n\nHowever, the provided evidence does **not support this answer**\u2014it appears unrelated and insufficient.",
+      "confidence": 0.5421428571428571,
+      "method": "llm"
+    },
+    {
+      "question": "In what city is the company that Fastjet Tanzania was originally founded as a part of prior to rebranding based?",
+      "pred": "Fastjet Tanzania was originally founded as part of **Lonrho\u2019s airline operations** before rebranding, and **Lonrho plc was based in London**.\n\nSo the city is **London**.",
+      "confidence": 0.5547254882486118,
+      "method": "llm"
+    },
+    {
+      "question": "What is the name of the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip hop?",
+      "pred": "The magazine is **Cyclic Defrost**.\n\nThe provided evidence does not directly state this, so the answer is based on the known description of **Cyclic Defrost** as an Australian specialist electronic mu",
+      "confidence": 0.49188531609435726,
+      "method": "llm"
+    },
+    {
+      "question": "What is the population of the city that Munsonville is in the northwest corner of?",
+      "pred": "Munsonville is in the northwest corner of **Keene, New Hampshire**. The evidence provided does **not include Keene or its population**, so based on the given evidence, the population **cannot be deter",
+      "confidence": 0.5959090909090909,
+      "method": "llm"
+    },
+    {
+      "question": "A Pair of Brown Eyes and Wild Mountain Thyme is based from what artists song?",
+      "pred": "The evidence provided does not answer the question.\n\nIf you mean the songs **\u201cA Pair of Brown Eyes\u201d** and **\u201cWild Mountain Thyme\u201d**, they are commonly associated with **The Pogues** and traditional fo",
+      "confidence": 0.49427677104686674,
+      "method": "llm"
+    },
+    {
+      "question": "Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?",
+      "pred": "*Armageddon in Retrospect* was written by **Kurt Vonnegut**. He was best known for the **1969 satirical novel *Slaughterhouse-Five***.\n\nThe provided evidence doesn\u2019t directly mention this, but this is",
+      "confidence": 0.5128688565368152,
+      "method": "llm"
+    },
+    {
+      "question": "What class of instrument does Apatim Majumdar play?",
+      "pred": "The evidence provided does not mention **Apatim Majumdar** at all, so it is **insufficient to determine** what class of instrument he plays.",
+      "confidence": 0.4215222107637534,
+      "method": "llm"
+    },
+    {
+      "question": " Which movie did Disney produce first,  The Many Adventures of Winnie the Pooh or Ride a Wild Pony?",
+      "pred": "The Many Adventures of Winnie the Pooh was produced first.\n\n- Ride a Wild Pony was released in 1975.\n- The Many Adventures of Winnie the Pooh was released in 1977.\n\nSo, Disney produced Ride a Wild Pon",
+      "confidence": 0.4578827107348803,
+      "method": "llm"
+    }
+  ],
+  "reasoning_results": [
+    {
+      "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+      "pred": "The evidence provided does not mention Sergei Aleksandrovich Tokarev or the university where he was a professor, so it\u2019s insufficient to determine the founding year.",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Black Book starred the actress and writer of what heritage?",
+      "pred": "The evidence provided does not identify any specific work titled *Black Book*, nor does it mention an actress who wrote it.\n\nThe only evidence is about **Ernest Norman**, which is unrelated to *Black ",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "Which actor does American Beauty and American Beauty have in common?",
+      "pred": "The provided evidence does not mention the film *American Beauty* or its cast, so I can\u2019t determine the actors from this evidence alone.",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 3,
+      "is_fallback": false
+    },
+    {
+      "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+      "pred": "Based on general knowledge and not verified with retrieved sources: Ken Pruitt was a Republican member of the **Florida Senate**, which is the **upper house** of the Florida Legislature. The Florida S",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Between Greyia and Calibanus, which genus contains more species?",
+      "pred": "The provided evidence does not mention either **Greyia** or **Calibanus**, so it is **insufficient to determine** which genus contains more species.",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Did John Updike and Tom Clancy both publish more than 15 bestselling novels?",
+      "pred": "Insufficient evidence.\n\nThe provided evidence does not mention John Updike or Tom Clancy, nor how many bestselling novels either published. So based on this evidence, I can\u2019t determine whether both pu",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?",
+      "pred": "I\u2019m answering from general knowledge, not from retrieved evidence, so this may be imperfect.\n\nThe person you\u2019re referring to was **John Andr\u00e9**, the British Army officer who was **hanged in 1780** for",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "which Mexican and American film actress is Ethel Houbiers  French voice of ",
+      "pred": "The evidence provided does not identify **which Mexican-American film actress** Ethel Houbiers was the French voice of.\n\nNone of the evidence mentions **Ethel Houbiers**, and none clearly points to a ",
+      "confidence": 0.9733333333333334,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Which major international airport in south-east England ranks as the 8th busiest airport in Europe and replaced Croydon Airport?",
+      "pred": "Based on general knowledge only, not retrieved evidence: **London Gatwick Airport**.\n\nIt is a major international airport in south-east England, is often ranked among Europe\u2019s busiest airports, and it",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?",
+      "pred": "The provided evidence does not mention Isabella Kelly or the ruined castle, so there is insufficient evidence to answer who characterized it as \u201cone of the most isolated fortifications in Britain.\u201d",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "The facility where Robert Croft worked as a navy instructor was also known as?",
+      "pred": "The evidence provided is insufficient to answer the question about Robert Croft.\n\nThe only evidence shown is about Ernest Norman and mentions the \u201cUnarius Educational Foundation, which later became kn",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Who released the song \"With or Without You\" first, Jai McDowall or U2?",
+      "pred": "Based on general knowledge, not retrieved evidence: **U2 released \u201cWith or Without You\u201d first.**\n\nIt was originally released by **U2 in 1987** on *The Joshua Tree*. **Jai McDowall** later recorded/per",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Which \"Roseanne\" star is in Scream 2?",
+      "pred": "This is from general knowledge and not backed by retrieved evidence.\n\nThe \u201cRoseanne\u201d star in *Scream 2* is **Sarah Chalke**. She appears in the film as **Cici Cooper\u2019s sorority sister, Lois**.",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "In what city is the company that Fastjet Tanzania was originally founded as a part of prior to rebranding based?",
+      "pred": "The evidence provided is insufficient and unrelated to Fastjet Tanzania or its prior company/rebranding history, so I can\u2019t determine the city from these sources.",
+      "confidence": 0.7333333333333334,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "What is the name of the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip hop?",
+      "pred": "This is based on general knowledge and not backed by retrieved evidence.\n\nThe magazine is **Cyclic Defrost**. It\u2019s an Australian specialist electronic music magazine known for covering avant-rock, exp",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "What is the population of the city that Munsonville is in the northwest corner of?",
+      "pred": "The evidence is insufficient to answer this precisely.\n\nIt asks for \u201cthe population of the city that Munsonville is in the northwest corner of,\u201d but none of the provided evidence mentions Munsonville ",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "A Pair of Brown Eyes and Wild Mountain Thyme is based from what artists song?",
+      "pred": "The provided evidence does not answer the question.\n\n\u201cA Pair of Brown Eyes\u201d is a song by The Pogues, and \u201cWild Mountain Thyme\u201d is a traditional song, but there is no evidence here showing what artist\u2019",
+      "confidence": 0.7333333333333334,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?",
+      "pred": "This is based on general knowledge, not retrieved evidence.\n\n*Armageddon in Retrospect* was written by **Kurt Vonnegut**, who is best known for the **1969 satirical novel *Slaughterhouse-Five***.",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "What class of instrument does Apatim Majumdar play?",
+      "pred": "The provided evidence does not mention **Apatim Majumdar** at all, so there isn\u2019t enough information to determine what class of instrument he plays.",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": " Which movie did Disney produce first,  The Many Adventures of Winnie the Pooh or Ride a Wild Pony?",
+      "pred": "The provided evidence is insufficient to answer the question. None of the evidence gives the release or production dates for **The Many Adventures of Winnie the Pooh** or **Ride a Wild Pony**.",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    }
+  ]
+}

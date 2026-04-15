@@ -1,0 +1,286 @@
+{
+  "naive_results": [
+    {
+      "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+      "pred": "Title: Sergei Aleksandrovich Tokarev\nSergei Aleksandrovich Tokarev (Russian: \u0421\u0435\u0440\u0433\u0435\u0301\u0439 \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u0422\u043e\u0301\u043a\u0430\u0440\u0435\u0432 , 29 December 1899 \u2013 19 April 1985) was a Russian scholar, ethnographer, historian, researc",
+      "confidence": 0.5741267903614526,
+      "method": "simple_fallback"
+    },
+    {
+      "question": "Black Book starred the actress and writer of what heritage?",
+      "pred": "American",
+      "confidence": 0.5919499947781555,
+      "method": "llm"
+    },
+    {
+      "question": "Which actor does American Beauty and American Beauty have in common?",
+      "pred": "Kevin Spacey",
+      "confidence": 0.6268103916476542,
+      "method": "llm"
+    },
+    {
+      "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+      "pred": "Title: Robert Nyce\nRobert E.",
+      "confidence": 0.5632602225036767,
+      "method": "simple_fallback"
+    },
+    {
+      "question": "Between Greyia and Calibanus, which genus contains more species?",
+      "pred": "unanswerable",
+      "confidence": 0.6140254735608767,
+      "method": "llm_unanswerable"
+    },
+    {
+      "question": "Did John Updike and Tom Clancy both publish more than 15 bestselling novels?",
+      "pred": "Title: Tom Clancy\nThomas Leo \"Tom\" Clancy Jr.",
+      "confidence": 0.4939334453256342,
+      "method": "simple_fallback"
+    },
+    {
+      "question": "Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?",
+      "pred": "John Andr\u00e9",
+      "confidence": 0.6223529411764706,
+      "method": "llm"
+    },
+    {
+      "question": "which Mexican and American film actress is Ethel Houbiers  French voice of ",
+      "pred": "Salma Hayek",
+      "confidence": 0.5970500946657619,
+      "method": "llm"
+    },
+    {
+      "question": "Which major international airport in south-east England ranks as the 8th busiest airport in Europe and replaced Croydon Airport?",
+      "pred": "Gatwick Airport",
+      "confidence": 0.576474305498049,
+      "method": "llm"
+    },
+    {
+      "question": "Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?",
+      "pred": "The Changing Scottish Landscape",
+      "confidence": 0.5577500000000001,
+      "method": "llm"
+    },
+    {
+      "question": "The facility where Robert Croft worked as a navy instructor was also known as?",
+      "pred": "Saint Mary's Pre-Flight football team",
+      "confidence": 0.5926923076923077,
+      "method": "llm"
+    },
+    {
+      "question": "Who released the song \"With or Without You\" first, Jai McDowall or U2?",
+      "pred": "Title: With or Without You\n\"With or Without You\" is a song by Irish rock band U2.",
+      "confidence": 0.5868883751896067,
+      "method": "simple_fallback"
+    },
+    {
+      "question": "Which \"Roseanne\" star is in Scream 2?",
+      "pred": "Laurie Metcalf",
+      "confidence": 0.6735714285714286,
+      "method": "llm"
+    },
+    {
+      "question": "In what city is the company that Fastjet Tanzania was originally founded as a part of prior to rebranding based?",
+      "pred": "Dar es Salaam",
+      "confidence": 0.6362482248417995,
+      "method": "llm"
+    },
+    {
+      "question": "What is the name of the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip hop?",
+      "pred": "Cyclic Defrost",
+      "confidence": 0.5596364204255042,
+      "method": "llm"
+    },
+    {
+      "question": "What is the population of the city that Munsonville is in the northwest corner of?",
+      "pred": "unanswerable",
+      "confidence": 0.6690909090909092,
+      "method": "llm_unanswerable"
+    },
+    {
+      "question": "A Pair of Brown Eyes and Wild Mountain Thyme is based from what artists song?",
+      "pred": "Robert Tannahill",
+      "confidence": 0.5607744933389954,
+      "method": "llm"
+    },
+    {
+      "question": "Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?",
+      "pred": "The Magic Christian",
+      "confidence": 0.6127304788533674,
+      "method": "llm"
+    },
+    {
+      "question": "What class of instrument does Apatim Majumdar play?",
+      "pred": "Title: Apratim Majumdar\nApratim Majumdar (born 1978), is an Indian classical musician from Kolkata, India.",
+      "confidence": 0.51715366766054,
+      "method": "simple_fallback"
+    },
+    {
+      "question": " Which movie did Disney produce first,  The Many Adventures of Winnie the Pooh or Ride a Wild Pony?",
+      "pred": "The Many Adventures of Winnie the Pooh",
+      "confidence": 0.567832766501351,
+      "method": "llm"
+    }
+  ],
+  "reasoning_results": [
+    {
+      "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+      "pred": "Title: Sergei Aleksandrovich Tokarev\nSergei Aleksandrovich Tokarev (Russian: \u0421\u0435\u0440\u0433\u0435\u0301\u0439 \u0410\u043b\u0435\u043a\u0441\u0430\u0301\u043d\u0434\u0440\u043e\u0432\u0438\u0447 \u0422\u043e\u0301\u043a\u0430\u0440\u0435\u0432 , 29 December 1899 \u2013 19 April 1985) was a Russian scholar, ethnographer, historian, researc",
+      "confidence": 0.7000000000000001,
+      "method": "simple_fallback",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Black Book starred the actress and writer of what heritage?",
+      "pred": "Jewish heritage",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Which actor does American Beauty and American Beauty have in common?",
+      "pred": "unanswerable",
+      "confidence": 0.7000000000000001,
+      "method": "llm_unanswerable",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+      "pred": "Title: Florida Senate\nThe Florida Senate is the upper house of the legislature of the U.",
+      "confidence": 0.7000000000000001,
+      "method": "simple_fallback",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "Between Greyia and Calibanus, which genus contains more species?",
+      "pred": "Calibanus",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Did John Updike and Tom Clancy both publish more than 15 bestselling novels?",
+      "pred": "unanswerable",
+      "confidence": 0.7000000000000001,
+      "method": "llm_unanswerable",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?",
+      "pred": "John Andr\u00e9",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "which Mexican and American film actress is Ethel Houbiers  French voice of ",
+      "pred": "Salma Hayek",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Which major international airport in south-east England ranks as the 8th busiest airport in Europe and replaced Croydon Airport?",
+      "pred": "Gatwick Airport",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?",
+      "pred": "1991's \"The Changing Scottish Landscape",
+      "confidence": 0.8733333333333333,
+      "method": "llm",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "The facility where Robert Croft worked as a navy instructor was also known as?",
+      "pred": "Naval Nuclear Power School",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Who released the song \"With or Without You\" first, Jai McDowall or U2?",
+      "pred": "Title: With or Without You\n\"With or Without You\" is a song by Irish rock band U2.",
+      "confidence": 0.7000000000000001,
+      "method": "simple_fallback",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "Which \"Roseanne\" star is in Scream 2?",
+      "pred": "Laurie Metcalf",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "In what city is the company that Fastjet Tanzania was originally founded as a part of prior to rebranding based?",
+      "pred": "unanswerable",
+      "confidence": 0.7000000000000001,
+      "method": "llm_unanswerable",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "What is the name of the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip hop?",
+      "pred": "Cyclic Defrost",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "What is the population of the city that Munsonville is in the northwest corner of?",
+      "pred": "21,382",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "A Pair of Brown Eyes and Wild Mountain Thyme is based from what artists song?",
+      "pred": "Francis McPeake",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?",
+      "pred": "Slaughterhouse-Five",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "What class of instrument does Apatim Majumdar play?",
+      "pred": "Title: Apratim Majumdar\nApratim Majumdar (born 1978), is an Indian classical musician from Kolkata, India.",
+      "confidence": 0.7000000000000001,
+      "method": "simple_fallback",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": " Which movie did Disney produce first,  The Many Adventures of Winnie the Pooh or Ride a Wild Pony?",
+      "pred": "Ride a Wild Pony",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    }
+  ]
+}
