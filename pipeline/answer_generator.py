@@ -1,4 +1,8 @@
-"""Stage 3b — Generate an answer from aggregated evidence via LLM."""
+"""Stage 3b — Generate an answer from aggregated evidence via LLM.
+
+Design principle: the generator ALWAYS produces an answer. It never refuses.
+Quality judgment is the verifier's job, not the generator's.
+"""
 import logging
 import re
 from typing import Dict, List, Optional
@@ -6,12 +10,6 @@ from typing import Dict, List, Optional
 from core.llm_provider import get_llm_client, get_model_name, get_token_limit_kwargs
 
 logger = logging.getLogger(__name__)
-
-_REFUSAL_PHRASES = [
-    "unanswerable", "insufficient evidence", "cannot determine",
-    "not enough information", "no evidence", "cannot be determined",
-    "unable to answer", "not mentioned", "i don't know", "i cannot",
-]
 
 
 class AnswerGenerator:
@@ -27,14 +25,12 @@ class AnswerGenerator:
         if self.client:
             try:
                 answer = self._llm_generate(question, evidence)
-                if answer and not self._is_refusal(answer):
+                if answer and len(answer.strip()) > 1:
                     return {"answer": answer, "method": "llm", "llm_calls": 1}
-                # LLM said unanswerable — signal to caller, don't return as final answer
-                return {"answer": "", "method": "llm_unanswerable", "llm_calls": 1}
             except Exception as exc:
                 logger.warning("LLM generation failed: %s", exc)
 
-        answer = self._simple_generate(question, evidence)
+        answer = self._simple_generate(evidence)
         return {"answer": answer, "method": "simple_fallback", "llm_calls": 0}
 
     def generate_fallback(self, question: str) -> Dict:
@@ -72,12 +68,16 @@ class AnswerGenerator:
             model=self.model_name,
             messages=[
                 {"role": "system", "content": (
-                    "Extract the answer from the evidence. "
-                    "Output ONLY the answer itself — a name, number, date, or short phrase. "
+                    "You are a QA extraction system. You MUST output an answer.\n"
+                    "Output ONLY the answer — a name, number, date, or short phrase.\n"
                     "No sentences, no explanation, no preamble.\n"
-                    "Examples of GOOD answers: 'Paris', '1755', 'yes', 'Kurt Vonnegut', 'Dutch'\n"
-                    "Examples of BAD answers: 'The answer is Paris.', 'Based on the evidence, it was founded in 1755.'\n"
-                    "If the evidence does not contain the answer, output exactly: unanswerable"
+                    "Examples: 'Paris', '1755', 'yes', 'Kurt Vonnegut', 'Dutch'\n\n"
+                    "Rules:\n"
+                    "- Use the evidence to find or reason about the answer.\n"
+                    "- If multiple evidence pieces are needed, connect them.\n"
+                    "- If the evidence is only partially relevant, use what you can and make your best inference.\n"
+                    "- You are FORBIDDEN from saying 'unanswerable', 'unknown', 'not enough information', etc.\n"
+                    "- You MUST always output a concrete answer, even if uncertain."
                 )},
                 {"role": "user", "content": f"{ctx}\n\nQ: {question}\nA:"},
             ],
@@ -95,13 +95,7 @@ class AnswerGenerator:
         return cleaned.strip() if cleaned.strip() else raw
 
     @staticmethod
-    def _is_refusal(answer: str) -> bool:
-        low = answer.strip().lower()
-        return any(p in low for p in _REFUSAL_PHRASES)
-
-    @staticmethod
-    def _simple_generate(question: str, evidence: List[Dict]) -> str:
-        """Extract a short answer span from the top evidence text."""
+    def _simple_generate(evidence: List[Dict]) -> str:
         text = evidence[0]["text"]
         lines = [ln.strip() for ln in text.split("\n") if ln.strip()]
         body_lines = [ln for ln in lines if not ln.startswith("Title:")]

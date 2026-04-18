@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "eval_size": 50,
+    "seed": 42,
+    "max_passages": 2000,
+    "max_iterations": 3,
+    "timestamp": "2026-04-17T03:23:25.840168"
+  },
+  "naive_rag": {
+    "system_name": "Naive RAG",
+    "total_queries": 50,
+    "exact_match": 0.4,
+    "token_f1": 0.5199047619047619,
+    "answer_coverage": 0.5116666666666666,
+    "avg_confidence": 0.576150983240448,
+    "avg_iterations": 1.0,
+    "avg_latency_seconds": 2.500127043339926,
+    "fallback_rate": 0.06
+  },
+  "reasoning_rag": {
+    "system_name": "Reasoning RAG",
+    "total_queries": 50,
+    "exact_match": 0.46,
+    "token_f1": 0.6054285714285714,
+    "answer_coverage": 0.6013333333333333,
+    "avg_confidence": 0.5221066666666667,
+    "avg_iterations": 1.94,
+    "avg_latency_seconds": 40.10873619078,
+    "fallback_rate": 0.46
+  }
+}

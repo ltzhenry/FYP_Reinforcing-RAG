@@ -102,9 +102,9 @@ class ReasoningRAG:
                 "stats": retrieval["stats"],
             })
 
-            # 4. Aggregate + generate
+            # 4. Aggregate + generate (always uses original question for consistency)
             agg = self.aggregator.aggregate(retrieval["evidence"])
-            gen = self.generator.generate(current_question, agg["selected"], analysis)
+            gen = self.generator.generate(question, agg["selected"], analysis)
             answer_text = gen["answer"]
             chain.append({
                 "step": f"generation_iter_{iteration}",
@@ -112,31 +112,21 @@ class ReasoningRAG:
                 "answer_preview": answer_text[:200],
             })
 
-            # 4.5 If generator refused, skip verification — force low confidence
-            if gen["method"] == "llm_unanswerable" or not answer_text:
-                verification = {
-                    "confidence": 0.0, "divergence": 0.0,
-                    "judge_a": {}, "judge_b": {}, "details": {
-                        "dimension_means": {"faithfulness": 0.0, "completeness": 0.0, "consistency": 0.0},
-                    },
-                }
-                chain.append({
-                    "step": f"verification_iter_{iteration}",
-                    "confidence": 0.0,
-                    "skipped": True,
-                    "reason": "generator returned unanswerable",
-                })
-            else:
-                # 5. Verify
-                verification = self.verifier.verify(current_question, answer_text, agg["selected"])
-                chain.append({
-                    "step": f"verification_iter_{iteration}",
-                    "confidence": verification["confidence"],
-                    "divergence": verification["divergence"],
-                    "judge_a": verification["judge_a"],
-                    "judge_b": verification["judge_b"],
-                })
+            # 4.5 If no evidence at all, skip to fallback
+            if not answer_text:
+                logger.info("No answer generated (no evidence) — going to fallback")
+                break
+
+            # 5. Verify — always run, let the judge decide quality
+            verification = self.verifier.verify(question, answer_text, agg["selected"])
             confidence = verification["confidence"]
+            chain.append({
+                "step": f"verification_iter_{iteration}",
+                "confidence": confidence,
+                "divergence": verification["divergence"],
+                "judge_a": verification["judge_a"],
+                "judge_b": verification["judge_b"],
+            })
 
             best_result = self._pack_result(
                 question=question,

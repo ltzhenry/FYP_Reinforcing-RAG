@@ -27,7 +27,7 @@ class Config:
     MAX_EVIDENCE_LENGTH = 3000
 
     # --- Verification ---
-    CONFIDENCE_THRESHOLD = 0.7
+    CONFIDENCE_THRESHOLD = 0.5
     MAX_ITERATIONS = 10
 
     # --- Evaluation ---
