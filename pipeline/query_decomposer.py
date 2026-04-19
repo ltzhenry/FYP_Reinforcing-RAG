@@ -41,20 +41,49 @@ class QueryDecomposer:
         self.last_subqueries = result
         return result
 
-    def refine_query(self, question: str, feedback: str) -> str:
-        """Rewrite the question using LLM based on judge feedback."""
+    def refine_query(self, question: str, feedback: str,
+                     evidence_context: str = "",
+                     known_entities: List[str] = None) -> str:
+        """Rewrite the question using LLM with awareness of what we've
+        already retrieved.
+
+        Parameters:
+            question: original or current question
+            feedback: reason from decision engine
+            evidence_context: a compact summary of evidence retrieved so far
+            known_entities: names/titles already known from evidence
+        """
         if not self.client:
             self.refine_history.append({
                 "original": question, "refined": question,
                 "feedback": feedback, "method": "no_llm",
             })
             return question
+
+        ent_str = ", ".join((known_entities or [])[:6]) or "(none)"
+
+        user_prompt = (
+            f"Original question: {question}\n\n"
+            f"Why we need to refine: {feedback}\n\n"
+            f"Evidence already retrieved:\n{evidence_context or '(none)'}\n\n"
+            f"Known entities from evidence: {ent_str}\n\n"
+            "Rewrite the question so that it explicitly incorporates the "
+            "KNOWN entities as anchors and asks specifically for the "
+            "missing fact. The rewrite should help retrieve the missing "
+            "passage. Return only the rewritten question."
+        )
+
         try:
             resp = self.client.chat.completions.create(
                 model=self.model_name,
                 messages=[
-                    {"role": "system", "content": "Rewrite the question to be clearer and more specific based on the feedback."},
-                    {"role": "user", "content": f"Original: {question}\nFeedback: {feedback}\nRewrite:"},
+                    {"role": "system",
+                     "content": (
+                         "You rewrite questions to improve retrieval. "
+                         "Anchor the rewrite on entities already known, "
+                         "and make the missing fact explicit."
+                     )},
+                    {"role": "user", "content": user_prompt},
                 ],
                 temperature=0.3,
                 **get_token_limit_kwargs(self.model_name, 200),
@@ -63,7 +92,9 @@ class QueryDecomposer:
             refined = refined if refined else question
             self.refine_history.append({
                 "original": question, "refined": refined,
-                "feedback": feedback, "method": "llm",
+                "feedback": feedback,
+                "known_entities": list(known_entities or [])[:6],
+                "method": "llm_evidence_aware",
             })
             return refined
         except Exception as exc:

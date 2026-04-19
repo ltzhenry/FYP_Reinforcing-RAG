@@ -1,0 +1,706 @@
+{
+  "naive_results": [
+    {
+      "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+      "pred": "1755",
+      "confidence": 0.6951985501393786,
+      "method": "llm"
+    },
+    {
+      "question": "Black Book starred the actress and writer of what heritage?",
+      "pred": "Jewish",
+      "confidence": 0.9483044788608869,
+      "method": "llm"
+    },
+    {
+      "question": "Which actor does American Beauty and American Beauty have in common?",
+      "pred": "Billie Dove",
+      "confidence": 0.9409206760521261,
+      "method": "llm"
+    },
+    {
+      "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+      "pred": "40",
+      "confidence": 0.7494215936703362,
+      "method": "llm"
+    },
+    {
+      "question": "Between Greyia and Calibanus, which genus contains more species?",
+      "pred": "Greyia",
+      "confidence": 0.704510604026994,
+      "method": "llm"
+    },
+    {
+      "question": "Did John Updike and Tom Clancy both publish more than 15 bestselling novels?",
+      "pred": "no",
+      "confidence": 0.7321843073720837,
+      "method": "llm"
+    },
+    {
+      "question": "Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?",
+      "pred": "John Andr\u00e9",
+      "confidence": 0.6503717508641491,
+      "method": "llm"
+    },
+    {
+      "question": "which Mexican and American film actress is Ethel Houbiers  French voice of ",
+      "pred": "Salma Hayek",
+      "confidence": 0.609340894852552,
+      "method": "llm"
+    },
+    {
+      "question": "Which major international airport in south-east England ranks as the 8th busiest airport in Europe and replaced Croydon Airport?",
+      "pred": "Gatwick Airport",
+      "confidence": 0.893955227334175,
+      "method": "llm"
+    },
+    {
+      "question": "Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?",
+      "pred": "The Changing Scottish Landscape",
+      "confidence": 0.8083457585148413,
+      "method": "llm"
+    },
+    {
+      "question": "The facility where Robert Croft worked as a navy instructor was also known as?",
+      "pred": "submarine school",
+      "confidence": 0.6939102835786324,
+      "method": "llm"
+    },
+    {
+      "question": "Who released the song \"With or Without You\" first, Jai McDowall or U2?",
+      "pred": "U2",
+      "confidence": 0.7095254410875387,
+      "method": "llm"
+    },
+    {
+      "question": "Which \"Roseanne\" star is in Scream 2?",
+      "pred": "Laurie Metcalf",
+      "confidence": 0.7327027371509468,
+      "method": "llm"
+    },
+    {
+      "question": "In what city is the company that Fastjet Tanzania was originally founded as a part of prior to rebranding based?",
+      "pred": "Dar es Salaam",
+      "confidence": 0.6900957662151102,
+      "method": "llm"
+    },
+    {
+      "question": "What is the name of the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip hop?",
+      "pred": "Cyclic Defrost",
+      "confidence": 0.6736117880326045,
+      "method": "llm"
+    },
+    {
+      "question": "What is the population of the city that Munsonville is in the northwest corner of?",
+      "pred": "3,562",
+      "confidence": 0.6976141706616834,
+      "method": "llm"
+    },
+    {
+      "question": "A Pair of Brown Eyes and Wild Mountain Thyme is based from what artists song?",
+      "pred": "Robert Tannahill",
+      "confidence": 0.7055565745264979,
+      "method": "llm"
+    },
+    {
+      "question": "Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?",
+      "pred": "The Magic Christian",
+      "confidence": 0.7237543260834339,
+      "method": "llm"
+    },
+    {
+      "question": "What class of instrument does Apatim Majumdar play?",
+      "pred": "Sarod",
+      "confidence": 0.8988799028922484,
+      "method": "llm"
+    },
+    {
+      "question": " Which movie did Disney produce first,  The Many Adventures of Winnie the Pooh or Ride a Wild Pony?",
+      "pred": "Ride a Wild Pony",
+      "confidence": 0.7998257981251176,
+      "method": "llm"
+    },
+    {
+      "question": "Pandikona and Berger Blanc Suisse are both what kinds of animals?",
+      "pred": "dogs",
+      "confidence": 0.6172088609922167,
+      "method": "llm"
+    },
+    {
+      "question": "The Prussian General Carl von Clausewitz is associated with what type of realism?",
+      "pred": "Classical realism",
+      "confidence": 0.8422521490561736,
+      "method": "llm"
+    },
+    {
+      "question": "What where both Hawker Hurricane and No. 1455 Flight apart of?",
+      "pred": "RAF",
+      "confidence": 0.7550765334981595,
+      "method": "llm"
+    },
+    {
+      "question": "what language did the ethnic group which Torstein Ellingsen was its drumer  speaks ",
+      "pred": "Norwegian",
+      "confidence": 0.7074928009100196,
+      "method": "llm"
+    },
+    {
+      "question": "From March 631 to April 631, Farrukhzad Khosrau V was the king of an empire that succeeded which empire?",
+      "pred": "Parthian Empire",
+      "confidence": 0.6595592335702475,
+      "method": "llm"
+    },
+    {
+      "question": "Beer Wars covers the differences between large corporate breweries, and small breweries, such as what brewery that is headquartered in Escondido, california?",
+      "pred": "Stone Brewing Co",
+      "confidence": 0.7116900694044656,
+      "method": "llm"
+    },
+    {
+      "question": "Which head coach has led their team for a longer period of time, Tim Cluess or Steve Prohm?",
+      "pred": "Tim Cluess",
+      "confidence": 0.7162179071593673,
+      "method": "llm"
+    },
+    {
+      "question": "During what war were the Russia-United Kingdom relations in a state of rivalry after the abdication of Emperor Nicholas II? ",
+      "pred": "the Cold War",
+      "confidence": 0.8265873581001294,
+      "method": "llm"
+    },
+    {
+      "question": "How far from Sacramento is the flight school in Atwater?",
+      "pred": "about 115 miles south",
+      "confidence": 0.7643769973838733,
+      "method": "llm"
+    },
+    {
+      "question": "Baraki Barak District is situated in the western part of a province whose capital is what?",
+      "pred": "Pul-i-Alam",
+      "confidence": 0.8137191213611402,
+      "method": "llm"
+    },
+    {
+      "question": "What was the 2010 population of the town where Black Crescent Mountain was located? ",
+      "pred": "7,554",
+      "confidence": 0.8506693148918444,
+      "method": "llm"
+    },
+    {
+      "question": "In the NASA mission where Moon trees were taken into space, what was the nickname of the Command Module?",
+      "pred": "Kitty Hawk",
+      "confidence": 0.8398543471484716,
+      "method": "llm"
+    },
+    {
+      "question": "Which comic series involves characters such as Nick Fury and Baron von Strucker?",
+      "pred": "Nick Fury vs. S.H.I.E.L.D",
+      "confidence": 0.7239432102077179,
+      "method": "llm"
+    },
+    {
+      "question": "College Humor is a 1933 American pre-Code musical comedy film that starred what American singer and actor who has a trademark warm bass-baritone voice?",
+      "pred": "Bing Crosby",
+      "confidence": 0.7459434459052587,
+      "method": "llm"
+    },
+    {
+      "question": "Who is writing a book about the Koch family who control the second-largest privately owned company in the United States?",
+      "pred": "Jane Mayer",
+      "confidence": 0.8261992977022778,
+      "method": "llm"
+    },
+    {
+      "question": "New York State Route 9R rejoins its parent in a hamlet located  in what New York County?",
+      "pred": "Albany County",
+      "confidence": 0.7706130519930399,
+      "method": "llm"
+    },
+    {
+      "question": "12 Years a Slave starred what British actor born 10 July 1977)",
+      "pred": "Chiwetel Ejiofor",
+      "confidence": 0.7836917052903682,
+      "method": "llm"
+    },
+    {
+      "question": "What was the capital of India when the Taj Mahal was commissioned?",
+      "pred": "Agra",
+      "confidence": 0.9045948384093008,
+      "method": "llm"
+    },
+    {
+      "question": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+      "pred": "New York City",
+      "confidence": 0.7288666793229543,
+      "method": "llm"
+    },
+    {
+      "question": "What river can a  large African bovine be seen bathing in in the Mwabvi Wildlife Reserve?",
+      "pred": "Mwabvi river",
+      "confidence": 0.7043425694716847,
+      "method": "llm"
+    },
+    {
+      "question": "Jalen Jones plays basketball for an NBA team that plays their home games in what arena?",
+      "pred": "Smoothie King Center",
+      "confidence": 0.7571679757861048,
+      "method": "llm"
+    },
+    {
+      "question": "The On Tour Forever album gave Blues Traveler the opportunity to display what musical trademark?",
+      "pred": "John Popper's harmonica",
+      "confidence": 0.8833163169082411,
+      "method": "llm"
+    },
+    {
+      "question": "Which Victorian poet was born in a 15th-century castle home to the Earl of Southesk?",
+      "pred": "Robert Browning",
+      "confidence": 0.6467115432881669,
+      "method": "llm"
+    },
+    {
+      "question": "Alexander Petrovich Nikolayev received the title Hero of the Soviet Union and the Order of Lenin for his actions during the   the final major offensive of the European theatre of what war?",
+      "pred": "World War II",
+      "confidence": 0.7436092915619812,
+      "method": "llm"
+    },
+    {
+      "question": "Where did Cale Gundy's brother play football in college?",
+      "pred": "Oklahoma State",
+      "confidence": 0.6898507361015228,
+      "method": "llm"
+    },
+    {
+      "question": "Who has released more solo albums, Nick Carter or Brady Seals?",
+      "pred": "Brady Seals",
+      "confidence": 0.8667964015481953,
+      "method": "llm"
+    },
+    {
+      "question": "Which Istanbul mosque is unique for retaining a Baroque style of architecture, the Bayezid II Mosque or the Nusretiye Mosque?",
+      "pred": "Nusretiye Mosque",
+      "confidence": 0.771510742862821,
+      "method": "llm"
+    },
+    {
+      "question": "What university did the last Detroit Pistons player to wear the number retired in honor of a player nicknamed \"The Worm\" attend?",
+      "pred": "Georgetown University",
+      "confidence": 0.7692586276167688,
+      "method": "llm"
+    },
+    {
+      "question": "The Atik Valide Mosque and Valens Aqueduct are found in what country?",
+      "pred": "Turkey",
+      "confidence": 0.7263176934811745,
+      "method": "llm"
+    },
+    {
+      "question": "Which of the four US Presidents who have been assinated was shot on the grounds of the Pan-American Exposition at the Temple of Music in Buffalo, New York?",
+      "pred": "William McKinley",
+      "confidence": 0.7407569028376434,
+      "method": "llm"
+    }
+  ],
+  "reasoning_results": [
+    {
+      "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+      "pred": "1755",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Black Book starred the actress and writer of what heritage?",
+      "pred": "Jewish",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Which actor does American Beauty and American Beauty have in common?",
+      "pred": "Kevin Spacey",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+      "pred": "40",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Between Greyia and Calibanus, which genus contains more species?",
+      "pred": "Greyia",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Did John Updike and Tom Clancy both publish more than 15 bestselling novels?",
+      "pred": "Yes",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?",
+      "pred": "John Andr\u00e9",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "which Mexican and American film actress is Ethel Houbiers  French voice of ",
+      "pred": "Salma Hayek",
+      "confidence": 0.84,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Which major international airport in south-east England ranks as the 8th busiest airport in Europe and replaced Croydon Airport?",
+      "pred": "London Heathrow Airport",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?",
+      "pred": "The Changing Scottish Landscape",
+      "confidence": 0.7999999999999999,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "The facility where Robert Croft worked as a navy instructor was also known as?",
+      "pred": "US Naval Submarine Base New London submarine school",
+      "confidence": 0.8133333333333334,
+      "method": "llm",
+      "iterations": 3,
+      "is_fallback": false
+    },
+    {
+      "question": "Who released the song \"With or Without You\" first, Jai McDowall or U2?",
+      "pred": "U2",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Which \"Roseanne\" star is in Scream 2?",
+      "pred": "Laurie Metcalf",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "In what city is the company that Fastjet Tanzania was originally founded as a part of prior to rebranding based?",
+      "pred": "Dar es Salaam",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "What is the name of the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip hop?",
+      "pred": "Cyclic Defrost",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "What is the population of the city that Munsonville is in the northwest corner of?",
+      "pred": "21,274",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "A Pair of Brown Eyes and Wild Mountain Thyme is based from what artists song?",
+      "pred": "The Pogues",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?",
+      "pred": "Slaughterhouse-Five",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "What class of instrument does Apatim Majumdar play?",
+      "pred": "Sarod",
+      "confidence": 0.9,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": " Which movie did Disney produce first,  The Many Adventures of Winnie the Pooh or Ride a Wild Pony?",
+      "pred": "Ride a Wild Pony",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Pandikona and Berger Blanc Suisse are both what kinds of animals?",
+      "pred": "dogs",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "The Prussian General Carl von Clausewitz is associated with what type of realism?",
+      "pred": "Classical realism",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "What where both Hawker Hurricane and No. 1455 Flight apart of?",
+      "pred": "RAF Fighter Command",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "what language did the ethnic group which Torstein Ellingsen was its drumer  speaks ",
+      "pred": "Sami",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "From March 631 to April 631, Farrukhzad Khosrau V was the king of an empire that succeeded which empire?",
+      "pred": "Sasanian Empire",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Beer Wars covers the differences between large corporate breweries, and small breweries, such as what brewery that is headquartered in Escondido, california?",
+      "pred": "Stone Brewing Co",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Which head coach has led their team for a longer period of time, Tim Cluess or Steve Prohm?",
+      "pred": "Tim Cluess",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "During what war were the Russia-United Kingdom relations in a state of rivalry after the abdication of Emperor Nicholas II? ",
+      "pred": "World War I",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "How far from Sacramento is the flight school in Atwater?",
+      "pred": "",
+      "confidence": 0.0,
+      "method": "error",
+      "iterations": 2,
+      "is_fallback": true
+    },
+    {
+      "question": "Baraki Barak District is situated in the western part of a province whose capital is what?",
+      "pred": "Pul-i-Alam",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "What was the 2010 population of the town where Black Crescent Mountain was located? ",
+      "pred": "7554",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 3,
+      "is_fallback": false
+    },
+    {
+      "question": "In the NASA mission where Moon trees were taken into space, what was the nickname of the Command Module?",
+      "pred": "Kitty Hawk",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Which comic series involves characters such as Nick Fury and Baron von Strucker?",
+      "pred": "Nick Fury, Agent of S.H.I.E.L.D",
+      "confidence": 0.9133333333333332,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "College Humor is a 1933 American pre-Code musical comedy film that starred what American singer and actor who has a trademark warm bass-baritone voice?",
+      "pred": "Bing Crosby",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Who is writing a book about the Koch family who control the second-largest privately owned company in the United States?",
+      "pred": "Jane Mayer",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "New York State Route 9R rejoins its parent in a hamlet located  in what New York County?",
+      "pred": "Albany County",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "12 Years a Slave starred what British actor born 10 July 1977)",
+      "pred": "Chiwetel Ejiofor",
+      "confidence": 0.5,
+      "method": "llm",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "What was the capital of India when the Taj Mahal was commissioned?",
+      "pred": "Agra",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+      "pred": "Rome",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "What river can a  large African bovine be seen bathing in in the Mwabvi Wildlife Reserve?",
+      "pred": "Shire River",
+      "confidence": 0.0,
+      "method": "llm_fallback_no_evidence",
+      "iterations": 3,
+      "is_fallback": true
+    },
+    {
+      "question": "Jalen Jones plays basketball for an NBA team that plays their home games in what arena?",
+      "pred": "Smoothie King Center",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "The On Tour Forever album gave Blues Traveler the opportunity to display what musical trademark?",
+      "pred": "their trademark jam band sound",
+      "confidence": 0.5666666666666667,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Which Victorian poet was born in a 15th-century castle home to the Earl of Southesk?",
+      "pred": "Lady Charlotte Elliot",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Alexander Petrovich Nikolayev received the title Hero of the Soviet Union and the Order of Lenin for his actions during the   the final major offensive of the European theatre of what war?",
+      "pred": "World War II",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Where did Cale Gundy's brother play football in college?",
+      "pred": "Oklahoma State",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Who has released more solo albums, Nick Carter or Brady Seals?",
+      "pred": "Nick Carter",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 2,
+      "is_fallback": false
+    },
+    {
+      "question": "Which Istanbul mosque is unique for retaining a Baroque style of architecture, the Bayezid II Mosque or the Nusretiye Mosque?",
+      "pred": "Nusretiye Mosque",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "What university did the last Detroit Pistons player to wear the number retired in honor of a player nicknamed \"The Worm\" attend?",
+      "pred": "Georgetown University",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "The Atik Valide Mosque and Valens Aqueduct are found in what country?",
+      "pred": "Turkey",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    },
+    {
+      "question": "Which of the four US Presidents who have been assinated was shot on the grounds of the Pan-American Exposition at the Temple of Music in Buffalo, New York?",
+      "pred": "William McKinley",
+      "confidence": 1.0,
+      "method": "llm",
+      "iterations": 1,
+      "is_fallback": false
+    }
+  ]
+}

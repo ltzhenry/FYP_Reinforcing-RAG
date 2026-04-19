@@ -30,8 +30,11 @@ class AnswerGenerator:
             except Exception as exc:
                 logger.warning("LLM generation failed: %s", exc)
 
-        answer = self._simple_generate(evidence)
-        return {"answer": answer, "method": "simple_fallback", "llm_calls": 0}
+        # LLM failed or returned empty — return empty so the orchestrator
+        # retries or falls back cleanly. Do NOT return raw evidence as the
+        # "answer": that gets high similarity scores from the verifier but
+        # is not an actual answer to the question.
+        return {"answer": "", "method": "llm_failed", "llm_calls": 0}
 
     def generate_fallback(self, question: str) -> Dict:
         """Fallback: answer purely from LLM knowledge, no evidence."""
